@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="orden" cols="30" rows="10"></textarea>
+    <input type="button" onclick="dividirCadena()" name="" id="" value="ordenar">
+    <p id="res"></p>
+    <br><br>
+    <p id="ordenado"></p>
+</body>
+<script>
+    const dividirCadena = () => {
+        var espacio = " ";
+        var coma = ",";
+        var cadenaVerso = document.getElementById("orden").value;
+        var arrayDeCadenas = cadenaVerso.split(espacio);
+        document.getElementById("res").innerHTML = " Total de numeros que escribiste: " + arrayDeCadenas.length;
+
+        arrayDeCadenas.sort(function(a, b) {
+            return a - b
+        });
+        return document.getElementById("ordenado").innerHTML = arrayDeCadenas;
+
+    }
+</script>
+
+</html>
