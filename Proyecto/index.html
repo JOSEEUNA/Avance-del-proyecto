@@ -117,31 +117,38 @@
             margin-bottom: 25px;
         }
     </style>
+
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/accordio.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/verTabs.css">
+
 </head>
 
 <body>
 
     <div id="navbar">
+
         <a href="#default" id="logo">Repasa lo aprendido</a>
         <div id="navbar-right">
             <a class="active" href="#home">Home</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div>
+
     </div>
 
     <div style="margin-top:130px;padding:15px 15px 0;font-size:30px">
 
         <div class="tab">
+
             <button class="tablinks" onclick="openCity(event, 'Operaciones')">Operaciones Metematicas</button>
             <button class="tablinks" onclick="openCity(event, 'Figuras')">Figuras Geometricas</button>
             <button class="tablinks" onclick="openCity(event, 'Tokyo')">Lectura</button>
+
         </div>
 
+        <!---Inicio Operaciones Matematicas-->
         <div id="Operaciones" class="tabcontent">
             <div class="container">
                 <h3>Matematicas</h3>
@@ -155,21 +162,18 @@
                     <br>
                     <label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
                 </div>
-                <br><br>
+                <br><br><br>
 
-                <br>
                 <input type="button" class="button3" onclick="generar()" value="Generar Numeros">
                 <input type="button" class="button2" onclick="operacionesArit()" value="calcular">
 
                 <button class="accordion">Conoce Numeros Pares e Impares</button>
+
                 <div class="panel">
                     <div>
-                        <p>Pares E impares</p>
-                        <br>
-                        <hr>
-                        <br>
+                        <p>Pares E impares</p><br>
+                        <hr><br>
                         <p style="width: 100%;" for="email"><b>Numero</b></p>
-
                         <input name="" id="numeros" type="number" placeholder="Escribe un  numero" required>
                         <input type="button" class="button" onclick="pares();" value="Calcular">
                         <br>
@@ -199,10 +203,13 @@
                     <p id="ordenado2"></p>
                     <br>
                 </div>
+
             </div>
 
 
         </div>
+        <!---fin Operaciones Matematicas-->
+
         <!---Inicio de tal figuras geometricas-->
         <div id="Figuras" class="tabcontent">
 
@@ -220,6 +227,7 @@
             </div>
 
             <div id="triangulo" class="tabcontent1">
+
                 <h3>Figuras</h3>
                 <form name="f1">
                     <input type="text" name="txtn1" placeholder="valor base">
@@ -228,8 +236,11 @@
                     <input type="button" class="button2" value="Limpiar" onclick="limpiar()">
                     <canvas id="miCanvas">Su navegador no soporta Canvas.</canvas>
                 </form>
+
             </div>
+
             <div id="Rectangulo" class="tabcontent1">
+
                 <h3>Rectangulo</h3>
                 <input type="button" class="button3" value="Ver Figura" onclick="rectangulo()">
                 <br/>
@@ -255,8 +266,11 @@
                 <input type="button" class="button2" value="Calcular" onclick="opeRectanguloArea()"><br/>
                 <p style="width: 100%;" id="rectSolo"></p><br>
                 <h1 id="Rectresul2"></h1>
+
             </div>
+
             <div id="Cuadrado" class="tabcontent1">
+
                 <h3>Cuadrado</h3>
                 <input type="button" class="button3" value="Ver Figura" onclick="Cuadrado()">
                 <br>
@@ -276,7 +290,9 @@
                 <h1 id="Resul"></h1>
 
             </div>
+
             <div id="circulo" class="tabcontent1">
+
                 <h3>Circulo</h3>
                 <input type="button" class="button3" value="Ver Figura" onclick="circulo()">
                 <br>
@@ -294,11 +310,13 @@
                 3.1416x(<input type="number" placeholder="Radio">)<sup>2</sup>
                 <input type="button" class="button2" value="Calcular"><br/>
                 <h1 id="Resul"></h1>
+
             </div>
+
             <div id="Trapecio" class="tabcontent1">
+
                 <h3>Trapecio</h3>
                 <input type="button" class="button3" value="Ver Figura" onclick="Trapecio()">
-
                 <br>
                 <canvas id="miCanvasTrap">Su navegador no soporta Canvas.</canvas>
                 <p>ELEMENTOS ---> l: Lado1, m: Lado2, n: Lado3, o: Lado4 <br/>b: Base menor B: Base mayor h: Altura</p>
@@ -316,7 +334,9 @@
                 <input type="number" placeholder="Base Mayor">/2)
                 <input type="button" class="button2" value="Calcular"><br/>
                 <h1 id="Resul"></h1>
+
             </div>
+
             <!--
             <div id="Trapezoide" class="tabcontent1">
                 <h3>Trapezoide</h3>
@@ -328,7 +348,9 @@
                 <p>ELEMENTOS = a: Lado <br/>FÓRMULA PERÍMETRO = P = P = 4a<br/>FÓRMULA ÁREA = A = a2
 -->
         </div>
+
         <div id="pentagono" class="tabcontent1">
+
             <h3>Pentagono</h3>
             <input type="button" class="button3" value="Ver Figura" onclick="pentagono()">
             <br>
@@ -346,8 +368,11 @@
             <h1 id="perimetro"></h1><input type="number" placeholder="Apotema">/2
             <input type="button" class="button2" value="Calcular"><br/>
             <h1 id="Resul"></h1>
+
         </div>
+
         <div id="Hexagono" class="tabcontent1">
+
             <h3>Hexagono</h3>
             <input type="button" class="button3" value="Ver Figura" onclick="hexagono()">
             <br>
@@ -378,9 +403,9 @@
         </div>
     -->
         <div id="Rombo" class="tabcontent1">
+
             <h3>Rombo</h3>
             <input type="button" class="button3" value="Ver Figura" onclick="Rombo()">
-
             <br>
             <canvas id="miCanvasRom">Su navegador no soporta Canvas.</canvas>
             <p>ELEMENTOS ---> a: Lado d: Diagonal menor D: Diagonal mayor</p>
@@ -405,11 +430,8 @@
 
     </div>
     <!---Fin de tal figuras geometricas-->
-
-
-
-
     </div>
+
     <script src="js/operacion.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/paresImpares.js"></script>
@@ -418,7 +440,6 @@
     <script src="js/figuras.js"></script>
     <script src="js/verTabs.js"></script>
     <script>
-        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {
             scrollFunction()
         };
