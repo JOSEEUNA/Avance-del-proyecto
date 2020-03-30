@@ -1,3 +1,4 @@
+//cuarta funcion
 const pares = () => {
     //la variable listpar se esta igualando al ID  que se esta obteniedo
     //  de los input en el html evaluandolo como un entero
