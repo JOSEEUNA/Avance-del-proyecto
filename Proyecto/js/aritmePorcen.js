@@ -102,16 +102,16 @@ const porcentajeEjercicio = () => {
         j = 1;
         var IndicadorCorrecto = document.getElementById("IndicadorCorrecto");
 
-        var id = setInterval(frame, 10);
+        var id1 = setInterval(frame, 10);
         var widthcorecto = 0;
 
         function frame() {
             if (widthcorecto >= porcentajeCorrectas) {
-                clearInterval(id);
+                clearInterval(id1);
                 j = 0;
             } else {
                 widthcorecto++;
-                IndicadorCorrecto.style.widthcorecto = widthcorecto + "%";
+                IndicadorCorrecto.style.width = widthcorecto + "%";
                 IndicadorCorrecto.innerHTML = widthcorecto + "%";
             }
         }

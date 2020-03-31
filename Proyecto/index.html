@@ -145,7 +145,6 @@
 
             <button class="tablinks" onclick="openCity(event, 'Operaciones')">Operaciones Metematicas</button>
             <button class="tablinks" onclick="openCity(event, 'Figuras')">Figuras Geometricas</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Lectura</button>
 
         </div>
 
@@ -207,189 +206,191 @@
                     </div>
                     <div style="width: 100%;">
 
-                        <button class="button2" onclick="porcentajeEjercicio()">Ver porcentaje</button>
+                        <button class="button2" onclick="porcentajeEjercicio()">Ver porcentaje de respuestas</button>
                         <br>
+
                         <div id="myProgress">
                             <div id="IndicadorIncorecto">0%</div>
                         </div>
-                        <br>
+
+
                         <div id="myProgress">
                             <div id="IndicadorCorrecto">0%
                             </div>
-                            <br>
-
                         </div>
-                    </div>
-
-                    <button class="accordion">Conoce Números Pares e Impares</button>
-                    <div class="panel">
-                        <div>
-                            <p>Pares E impares</p><br>
-                            <hr><br>
-                            <p style="width: 100%;" for="email"><b>Número</b></p>
-                            <input name=" " id="numeros" type="number" placeholder="Escribe un numero" required>
-                            <input type="button" class="button" onclick="pares();" value="Calcular ">
-                            <br>
-                            <p id="numero"></p>
-                            <br>
-                        </div>
-                    </div>
-
-                    <button class="accordion">Ordenar números</button>
-                    <div class="panel">
-                        <br>
-                        <p>Menor a mayor</p><br>
-                        <hr>
-                        <p>Ingresa solo números con espacio</p>
-                        <br>
-                        <hr>
-                        <textarea name=" " id="orden" cols="30" rows="10" required></textarea>
-                        <input type="button" class="button" onclick="dividirCadena()" name=" " id=" " value="Ordenar">
-                        <br>
-                        <p id="res"></p>
-                        <br>
-                        <hr>
-                        <p id="ordenado"></p>
-                        <br>
-                        <hr>
-                        <p id="ordenado2"></p>
                         <br>
                     </div>
 
+                </div>
+
+                <button class="accordion">Conoce Números Pares e Impares</button>
+                <div class="panel">
+                    <div>
+                        <p>Pares E impares</p><br>
+                        <hr><br>
+                        <p style="width: 100%;" for="email"><b>Número</b></p>
+                        <input name=" " id="numeros" type="number" placeholder="Escribe un numero" required>
+                        <input type="button" class="button" onclick="pares();" value="Calcular ">
+                        <br>
+                        <p id="numero"></p>
+                        <br>
+                    </div>
+                </div>
+
+                <button class="accordion">Ordenar números</button>
+                <div class="panel">
+                    <br>
+                    <p>Menor a mayor</p><br>
+                    <hr>
+                    <p>Ingresa solo números con espacio</p>
+                    <br>
+                    <hr>
+                    <textarea name=" " id="orden" cols="30" rows="10" required></textarea>
+                    <input type="button" class="button" onclick="dividirCadena()" name=" " id=" " value="Ordenar">
+                    <br>
+                    <p id="res"></p>
+                    <br>
+                    <hr>
+                    <p id="ordenado"></p>
+                    <br>
+                    <hr>
+                    <p id="ordenado2"></p>
+                    <br>
                 </div>
 
 
             </div>
-            <!---fin Operaciones Matematicas-->
+        </div>
+        <!---fin Operaciones Matematicas-->
 
-            <!---Inicio de tab figuras geometricas-->
+        <!---Inicio de tab figuras geometricas-->
 
-            <div id='Figuras' class='tabcontent'>
+        <div id="Figuras" class="tabcontent">
 
-                <div class="tab1 ">
-                    <button class="tablinks1" onclick="verTabs(event, 'triangulo') " id="defaultOpen">Bienvenido</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'Rectangulo') ">Rectangulo</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'Cuadrado') ">Cuadrado</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'circulo') ">Circulo</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'Trapecio') ">Trapecio</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'pentagono') ">Pentagono</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'Hexagono') ">Hexagono</button>
-                    <button class="tablinks1" onclick="verTabs(event, 'Rombo') ">Rombo</button>
+            <div class="tab1">
+                <button class="tablinks1" onclick="verTabs(event, 'triangulo')" id="defaultOpen">Bienvenido</button>
+                <button class="tablinks1" onclick="verTabs(event, 'Rectangulo')">Rectangulo</button>
+                <button class="tablinks1" onclick="verTabs(event, 'Cuadrado')">Cuadrado</button>
+                <button class="tablinks1" onclick="verTabs(event, 'circulo')">Circulo</button>
+                <button class="tablinks1" onclick="verTabs(event, 'Trapecio')">Trapecio</button>
+                <button class="tablinks1" onclick="verTabs(event, 'pentagono')">Pentagono</button>
+                <button class="tablinks1" onclick="verTabs(event, 'Hexagono')">Hexagono</button>
+                <button class="tablinks1" onclick="verTabs(event, 'Rombo')">Rombo</button>
 
-                </div>
+            </div>
 
-                <div id="triangulo" class="tabcontent1">
+            <div id="triangulo" class="tabcontent1">
 
-                    <h3>Figuras</h3>
-                    <form name="f1">
-                        <input type="text" name="txtn1" placeholder="valor base">
-                        <input type="text" name="txtn2" placeholder="valor altura">
-                        <input type="button" class="button" value="Calcular" onclick="dibujar()">
-                        <input type="button" class="button2" value="Limpiar" onclick="limpiar()">
-                        <canvas id="miCanvas">Su navegador no soporta Canvas.</canvas>
-                    </form>
+                <h3>Figuras</h3>
+                <form name="f1">
+                    <input type="text" name="txtn1" placeholder="valor base">
+                    <input type="text" name="txtn2" placeholder="valor altura">
+                    <input type="button" class="button" value="Calcular" onclick="dibujar()">
+                    <input type="button" class="button2" value="Limpiar" onclick="limpiar()">
+                    <canvas id="miCanvas">Su navegador no soporta Canvas.</canvas>
+                </form>
 
-                </div>
+            </div>
 
-                <div id="Rectangulo" class="tabcontent1">
+            <div id="Rectangulo" class="tabcontent1">
 
-                    <h3>Rectangulo</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="rectangulo()">
-                    <br/>
-                    <canvas id="miCanvasRect">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS= b=base h=altura </p>
-                    <br/>
-                    <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P= 2b + 2h</p>
-                    2(<input type="number" id="Rectbase" required placeholder="Esbribe la base">) + 2(<input type="number" id="Rectaltura" placeholder="Escribe la altura">)
-                    <input type="button" class="button2" required value="Calcular" onclick="opeRectanguloPerim()"><br/>
-                    <h1 id="rectPrimp"></h1>
-                    </br>
-                    <h1 id="rectSecunp"></h1>
-                    </br>
-                    <h1 id="rectResult"></h1>
-                    </br>
-                    <h1 id="Rectresul"></h1>
-                    <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A= b x h</p>
-                    <input type="number" id="Rectbase1" placeholder="Esbribe la base"> x <input id="Rectaltura2" type="number" placeholder="Escribe la altura ">
-                    <input type="button" class="button2" value="Calcular" onclick="opeRectanguloArea()"><br/>
-                    <p style="width: 100%;" id="rectSolo"></p><br>
-                    <h1 id="Rectresul2"></h1>
+                <h3>Rectangulo</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="rectangulo()">
+                <br/>
+                <canvas id="miCanvasRect">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS= b=base h=altura </p>
+                <br/>
+                <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P= 2b + 2h</p>
+                2(<input type="number" id="Rectbase" required placeholder="Esbribe la base">) + 2(<input type="number" id="Rectaltura" placeholder="Escribe la altura">)
+                <input type="button" class="button2" required value="Calcular" onclick="opeRectanguloPerim()"><br/>
+                <h1 id="rectPrimp"></h1>
+                </br>
+                <h1 id="rectSecunp"></h1>
+                </br>
+                <h1 id="rectResult"></h1>
+                </br>
+                <h1 id="Rectresul"></h1>
+                <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A= b x h</p>
+                <input type="number" id="Rectbase1" placeholder="Esbribe la base"> x <input id="Rectaltura2" type="number" placeholder="Escribe la altura ">
+                <input type="button" class="button2" value="Calcular" onclick="opeRectanguloArea()"><br/>
+                <p style="width: 100%;" id="rectSolo"></p><br>
+                <h1 id="Rectresul2"></h1>
 
-                </div>
+            </div>
 
-                <div id="Cuadrado" class="tabcontent1">
+            <div id="Cuadrado" class="tabcontent1">
 
-                    <h3>Cuadrado</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="Cuadrado()">
-                    <br>
-                    <canvas id="miCanvasCua">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS ---> a: Lado </p>
-                    <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 4a</p>
-                    4x<input type="number" id="cuaLado" placeholder="Lado">
-                    <input type="button" class="button2" value="Calcular" onclick="opeCuadradoPerim()"><br/>
-                    <h1 id="resultCua"></h1>
-                    <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = a<sup>2</sup></p>
-                    (<input type="number" id="cuaLado1" placeholder="Lado">)<sup>2</sup>
-                    <input type="button" class="button2" value="Calcular" onclick="opeCuadradoArea()"><br/>
-                    <h1 id="resultCua1"></h1>
+                <h3>Cuadrado</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="Cuadrado()">
+                <br>
+                <canvas id="miCanvasCua">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS ---> a: Lado </p>
+                <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 4a</p>
+                4x<input type="number" id="cuaLado" placeholder="Lado">
+                <input type="button" class="button2" value="Calcular" onclick="opeCuadradoPerim()"><br/>
+                <h1 id="resultCua"></h1>
+                <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = a<sup>2</sup></p>
+                (<input type="number" id="cuaLado1" placeholder="Lado">)<sup>2</sup>
+                <input type="button" class="button2" value="Calcular" onclick="opeCuadradoArea()"><br/>
+                <h1 id="resultCua1"></h1>
 
-                </div>
+            </div>
 
-                <div id="circulo" class="tabcontent1">
+            <div id="circulo" class="tabcontent1">
 
-                    <h3>Circulo</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="circulo()">
-                    <br>
-                    <canvas id="miCanvasCir">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS ---> ¶: 3.1416 d: Diámetro r: Radio </p>
-                    <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = d x ¶</p>
-                    <input type="number" id="cirDiametro" placeholder="Diámetro">x3.1416
-                    <input type="button" class="button2" value="Calcular" onclick="opeCirculoPerim()"><br/>
-                    <h1 id="cirResult"></h1>
-                    <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = 3.1416 x r<sup>2</sup></p>
-                    3.1416x(<input type="number" id="cirRadio" placeholder="Radio">)<sup>2</sup>
-                    <input type="button" class="button2" value="Calcular" onclick="operCirculoArea()"><br/>
-                    <h1 id="cirResult1"></h1>
+                <h3>Circulo</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="circulo()">
+                <br>
+                <canvas id="miCanvasCir">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS ---> ¶: 3.1416 d: Diámetro r: Radio </p>
+                <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = d x ¶</p>
+                <input type="number" id="cirDiametro" placeholder="Diámetro">x3.1416
+                <input type="button" class="button2" value="Calcular" onclick="opeCirculoPerim()"><br/>
+                <h1 id="cirResult"></h1>
+                <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = 3.1416 x r<sup>2</sup></p>
+                3.1416x(<input type="number" id="cirRadio" placeholder="Radio">)<sup>2</sup>
+                <input type="button" class="button2" value="Calcular" onclick="operCirculoArea()"><br/>
+                <h1 id="cirResult1"></h1>
 
-                </div>
+            </div>
 
-                <div id="Trapecio" class="tabcontent1">
+            <div id="Trapecio" class="tabcontent1">
 
-                    <h3>Trapecio</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="Trapecio()">
-                    <br>
-                    <canvas id="miCanvasTrap">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS ---> l: Lado1, m: Lado2, n: Lado3, o: Lado4 <br/>b: Base menor B: Base mayor h: Altura</p>
-                    <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = l + m + n + o</p>
-                    <input type="number" id="traLado1" placeholder="Lado 1 ">+ <input type="number" id="traLado2" placeholder="Lado 2 ">+
-                    <input type="number" id="traLado3" placeholder="Lado 3 ">+ <input type="number" id="traLado4" placeholder="Lado 4 ">
-                    <input type="button" class="button2" value="Calcular" onclick="opeTrapecioAPerim()"><br/>
-                    <h1 id="traResul"></h1>
-                    <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = h ( B + b )/2</p>
-                    <input type="number" id="TraAlrura" placeholder="Altura">(<input type="number" id="baseMenor" placeholder="Base Menor ">+
-                    <input type="number" id="baseMayor" placeholder="Base Mayor ">/2)
-                    <input type="button" class="button2" value="Calcular" onclick="opeTrapecioArea()"><br/>
-                    <h1 id="traResul1"></h1>
+                <h3>Trapecio</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="Trapecio()">
+                <br>
+                <canvas id="miCanvasTrap">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS ---> l: Lado1, m: Lado2, n: Lado3, o: Lado4 <br/>b: Base menor B: Base mayor h: Altura</p>
+                <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = l + m + n + o</p>
+                <input type="number" id="traLado1" placeholder="Lado 1 ">+ <input type="number" id="traLado2" placeholder="Lado 2 ">+
+                <input type="number" id="traLado3" placeholder="Lado 3 ">+ <input type="number" id="traLado4" placeholder="Lado 4 ">
+                <input type="button" class="button2" value="Calcular" onclick="opeTrapecioAPerim()"><br/>
+                <h1 id="traResul"></h1>
+                <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = h ( B + b )/2</p>
+                <input type="number" id="TraAlrura" placeholder="Altura">(<input type="number" id="baseMenor" placeholder="Base Menor ">+
+                <input type="number" id="baseMayor" placeholder="Base Mayor ">/2)
+                <input type="button" class="button2" value="Calcular" onclick="opeTrapecioArea()"><br/>
+                <h1 id="traResul1"></h1>
 
-                </div>
+            </div>
 
-                <!--
+            <!--
             <div id="Trapezoide " class="tabcontent1 ">
                 <h3>Trapezoide</h3>
                 <input type="button " class="button3 " value="Ver Ejemplo " onclick="trapezoide() ">
@@ -401,50 +402,50 @@
 
         </div>
 -->
-                <div id="pentagono" class="tabcontent1">
+            <div id="pentagono" class="tabcontent1">
 
-                    <h3>Pentagono</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="pentagono()">
-                    <br>
-                    <canvas id="miCanvasPen">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS --->a: Apotema b: Base</p>
+                <h3>Pentagono</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="pentagono()">
+                <br>
+                <canvas id="miCanvasPen">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS --->a: Apotema b: Base</p>
+                <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 5b</p>
+                5x<input type="number" id="penBase" placeholder="Base">
+                <input type="button" class="button2" value="Calcular" onclick="opePentagonoPerim()"><br/>
+                <h1 id="penResul"></h1>
+                <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = (P x a)/2</p>
+                <h1 id="perimetro"></h1><input type="number" id="penApotema" placeholder="Apotema">/2
+                <input type="button" class="button2" value="Calcular" onclick="openPentagonoArea()"><br/>
+                <h1 id="penResul1"></h1>
+
+            </div>
+
+            <div id="Hexagono" class="tabcontent1">
+
+                <h3>Hexagono</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="hexagono()">
+                <br>
+                <canvas id="miCanvasHeg">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS ---> a: Apotema b: Base<br/>FÓRMULA PERÍMETRO --->P = 6b<br/>FÓRMULA ÁREA ---> A = (P x a)/2
                     <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
                     <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 5b</p>
-                    5x<input type="number" id="penBase" placeholder="Base">
-                    <input type="button" class="button2" value="Calcular" onclick="opePentagonoPerim()"><br/>
-                    <h1 id="penResul"></h1>
+                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 6b</p>
+                    5x<input type="number" id="hexBase" placeholder="Base">
+                    <input type="button" class="button2" value="Calcular" onclick="opeHexagonoPerim()"><br/>
+                    <h1 id="hexResul"></h1>
                     <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
                     <hr>
                     <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = (P x a)/2</p>
-                    <h1 id="perimetro"></h1><input type="number" id="penApotema" placeholder="Apotema">/2
-                    <input type="button" class="button2" value="Calcular" onclick="openPentagonoArea()"><br/>
-                    <h1 id="penResul1"></h1>
+                    <h1 id="perimetro"></h1><input type="number" id="hexApotema" placeholder="Apotema">/2
+                    <input type="button" class="button2" value="Calcular" onclick="openHexagonoArea()"><br/>
+                    <h1 id="hexResul1"></h1>
 
-                </div>
-
-                <div id="Hexagono" class="tabcontent1">
-
-                    <h3>Hexagono</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="hexagono()">
-                    <br>
-                    <canvas id="miCanvasHeg">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS ---> a: Apotema b: Base<br/>FÓRMULA PERÍMETRO --->P = 6b<br/>FÓRMULA ÁREA ---> A = (P x a)/2
-                        <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
-                        <hr>
-                        <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 6b</p>
-                        5x<input type="number" id="hexBase" placeholder="Base">
-                        <input type="button" class="button2" value="Calcular" onclick="opeHexagonoPerim()"><br/>
-                        <h1 id="hexResul"></h1>
-                        <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
-                        <hr>
-                        <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A = (P x a)/2</p>
-                        <h1 id="perimetro"></h1><input type="number" id="hexApotema" placeholder="Apotema">/2
-                        <input type="button" class="button2" value="Calcular" onclick="openHexagonoArea()"><br/>
-                        <h1 id="hexResul1"></h1>
-
-                </div>
-                <!--
+            </div>
+            <!--
         <div id="Heptagono " class="tabcontent1 ">
             <h3>Heptagono</h3>
             <input type="button " class="button3 " value="Ver Ejemplo " onclick="heptagono() ">
@@ -454,59 +455,59 @@
 
         </div>
     -->
-                <div id="Rombo" class="tabcontent1">
+            <div id="Rombo" class="tabcontent1">
 
-                    <h3>Rombo</h3>
-                    <input type="button" class="button3" value="Ver Figura" onclick="Rombo()">
-                    <br>
-                    <canvas id="miCanvasRom">Su navegador no soporta Canvas.</canvas>
-                    <p>ELEMENTOS ---> a: Lado d: Diagonal menor D: Diagonal mayor</p>
-                    <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 4a</p>
-                    4x<input type="number" id="romLado" placeholder="Lado">
-                    <input type="button" class="button2" value="Calcular"><br/>
-                    <h1 id="Resul"></h1>
-                    <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
-                    <hr>
-                    <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A =D x d/2</p>
-                    (<input type="number" id="romDiagonalMayor" placeholder="Diagonal mayor ">x<input type="number" id="romDiagonalMenor" placeholder="Diagonal menor ">)/2
-                    <input type="button" class="button2" value="Calcular "><br/>
-                    <h1 id="Resul"></h1>
-
-
-                </div>
-                <br><br><br>
-
+                <h3>Rombo</h3>
+                <input type="button" class="button3" value="Ver Figura" onclick="Rombo()">
+                <br>
+                <canvas id="miCanvasRom">Su navegador no soporta Canvas.</canvas>
+                <p>ELEMENTOS ---> a: Lado d: Diagonal menor D: Diagonal mayor</p>
+                <p style="width: 100%; text-align: center;">Calcular PERÍMETRO</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA PERÍMETRO= P = 4a</p>
+                4x<input type="number" id="romLado" placeholder="Lado">
+                <input type="button" class="button2" value="Calcular"><br/>
+                <h1 id="Resul"></h1>
+                <p style="width: 100%; text-align: center;">Calcular ÁREA</p>
+                <hr>
+                <p style="width: 100%; text-align: center;">FÓRMULA ÁREA= A =D x d/2</p>
+                (<input type="number" id="romDiagonalMayor" placeholder="Diagonal mayor ">x<input type="number" id="romDiagonalMenor" placeholder="Diagonal menor ">)/2
+                <input type="button" class="button2" value="Calcular "><br/>
+                <h1 id="Resul"></h1>
 
 
             </div>
-            <!---Fin de tal figuras geometricas-->
+            <br><br><br>
+
+
+
         </div>
+        <!---Fin de tal figuras geometricas-->
+    </div>
 
-        <script src="js/operacion.js"></script>
-        <script src="js/tabs.js"></script>
-        <script src="js/paresImpares.js"></script>
-        <script src="js/CCORDIO.JS"></script>
-        <script src="js/ordenar.js"></script>
-        <script src="js/figuras.js"></script>
-        <script src="js/verTabs.js"></script>
-        <script src="js/aritmePorcen.js"></script>
-        <script>
-            window.onscroll = function() {
-                scrollFunction()
-            };
+    <script src="js/operacion.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/paresImpares.js"></script>
+    <script src="js/CCORDIO.JS"></script>
+    <script src="js/ordenar.js"></script>
+    <script src="js/figuras.js"></script>
+    <script src="js/verTabs.js"></script>
+    <script src="js/aritmePorcen.js"></script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
-            const scrollFunction = () => {
-                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                    document.getElementById("navbar").style.padding = "30px 10px";
-                    document.getElementById("logo").style.fontSize = "25px";
-                } else {
-                    document.getElementById("navbar").style.padding = "50px 10px";
-                    document.getElementById("logo").style.fontSize = "25px";
-                }
+        const scrollFunction = () => {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "50px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
             }
-        </script>
+        }
+    </script>
 
 </body>
 
